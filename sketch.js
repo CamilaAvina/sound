@@ -147,8 +147,8 @@ function setup() {
     // env = new p5.Envelope();
     // env.setADSR(attackTime, decayTime, susPercent, releaseTime);
     //  env.setRange(attackLevel, releaseLevel);
- button = createButton('');
- button.size(50,50);
+ button = createButton('click on me!!');
+ button.size(150,70);
  button.mousePressed(toggle);
   // triOsc = new p5.Oscillator('triangle');
   // triOsc.amp(env);
