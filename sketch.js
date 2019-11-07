@@ -115,9 +115,9 @@ let capture;
 let tracker
 let w = 640,
     h = 580;
-let attackLevel = 1.0;
-let releaseLevel = 0;
-
+// let attackLevel = 1.0;
+// let releaseLevel = 0;
+//
 // let attackTime = 0.001;
 // let decayTime = 0.2;
 // let susPercent = 0.2;
@@ -144,16 +144,16 @@ function setup() {
     tracker = new clm.tracker();//clm is in html code t be able to use recognition
     tracker.init();
     tracker.start(capture.elt);
-//     env = new p5.Envelope();
-//     env.setADSR(attackTime, decayTime, susPercent, releaseTime);
-//      env.setRange(attackLevel, releaseLevel);
+    // env = new p5.Envelope();
+    // env.setADSR(attackTime, decayTime, susPercent, releaseTime);
+    //  env.setRange(attackLevel, releaseLevel);
  button = createButton('');
  button.size(50,50);
  button.mousePressed(toggle);
-//   triOsc = new p5.Oscillator('triangle');
-//   triOsc.amp(env);
-//   triOsc.start();
-//   triOsc.freq(220);
+  // triOsc = new p5.Oscillator('triangle');
+  // triOsc.amp(env);
+  // triOsc.start();
+  // triOsc.freq(220);
 //
 //   button.mousePressed(playEnv);
 }
@@ -207,6 +207,7 @@ function draw() {
 function toggle()  {
   if (!playing){
      playing = true;
+     // env.play();
 
      } else {
        playing = false;
